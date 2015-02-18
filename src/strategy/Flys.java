@@ -45,3 +45,11 @@ class CantFly implements Flys{
     }
 
 }
+
+class FlyAsRocket implements Flys{
+
+    @Override
+    public String fly() {
+        return "Flying with a rocket";
+    }
+}

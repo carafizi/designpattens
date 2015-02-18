@@ -17,6 +17,9 @@ public class AnimalPlay{
 
         System.out.println("Dog: " + sparky.tryToFly());
 
+        tweety.setFlyingAbility(new FlyAsRocket());
+        System.out.println("Bird: " + tweety.tryToFly());
+
     }
 
 }
