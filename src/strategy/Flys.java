@@ -17,9 +17,7 @@ package strategy;
 // I'm decoupling : encapsulating the concept that varies
 
 public interface Flys {
-
     String fly();
-
 }
 
 // Class used if the Animal can fly
@@ -27,9 +25,7 @@ public interface Flys {
 class ItFlys implements Flys{
 
     public String fly() {
-
         return "Flying High";
-
     }
 
 }
@@ -39,9 +35,7 @@ class ItFlys implements Flys{
 class CantFly implements Flys{
 
     public String fly() {
-
         return "I can't fly";
-
     }
 
 }
