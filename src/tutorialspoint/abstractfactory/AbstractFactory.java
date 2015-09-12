@@ -1,6 +1,6 @@
 package tutorialspoint.abstractfactory;
 
-public abstract class AbstractFactory {
-    abstract Color getColor(String color);
-    abstract Shape getShape(String shape) ;
+public interface  AbstractFactory {
+     Color getColor(String color);
+     Shape getShape(String shape) ;
 }

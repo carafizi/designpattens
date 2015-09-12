@@ -1,6 +1,6 @@
 package tutorialspoint.abstractfactory;
 
-public class ShapeFactory extends AbstractFactory {
+public class ShapeFactory implements AbstractFactory {
 
     @Override
     public Shape getShape(String shapeType){
@@ -23,7 +23,7 @@ public class ShapeFactory extends AbstractFactory {
     }
 
     @Override
-    Color getColor(String color) {
+    public Color getColor(String color) {
         return null;
     }
 }
