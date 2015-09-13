@@ -6,7 +6,6 @@ public class SingleObject {
 
     private SingleObject(){}
 
-    //Get the only object available
     public static synchronized SingleObject getInstance(){
         if(instance == null) {
             instance =  new SingleObject();
