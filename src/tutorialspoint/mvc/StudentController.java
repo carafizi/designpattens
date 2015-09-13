@@ -14,17 +14,6 @@ public class StudentController {
         model.setName(name);
     }
 
-    public String getStudentName(){
-        return model.getName();
-    }
-
-    public void setStudentID(String id){
-        model.setId(id);
-    }
-
-    public String getStudentId(){
-        return model.getId();
-    }
 
     public void updateView(){
         view.printStudentDetails(model.getName(), model.getId());
