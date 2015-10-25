@@ -19,7 +19,7 @@ public class Fruit implements Item {
     }
 
     @Override
-    public int accept(ShoppingCartVisitor visitor) {
+    public int calculatePrice(ShoppingCartVisitor visitor) {
         return visitor.visit(this);
     }
 }

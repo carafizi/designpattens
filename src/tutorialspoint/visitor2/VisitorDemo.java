@@ -21,7 +21,7 @@ public class VisitorDemo {
         ShoppingCartVisitor visitor = new ShoppingCartVisitorImpl();
         int sum=0;
         for(Item item : items){
-            sum = sum + item.accept(visitor);
+            sum = sum + item.calculatePrice(visitor);
         }
         return sum;
     }
