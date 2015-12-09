@@ -2,9 +2,9 @@ package best.mvc;
 
 public class StudentView {
 
-    public void printStudentDetails(String studentName, String id){
+    public void printStudentDetails(Student student){
         System.out.println("Student: ");
-        System.out.println("Name: " + studentName);
-        System.out.println("ID: " + id);
+        System.out.println("Name: " + student.getName());
+        System.out.println("ID: " + student.getId());
     }
 }
