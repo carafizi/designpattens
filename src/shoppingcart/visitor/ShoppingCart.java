@@ -1,4 +1,4 @@
-package other.shoppingcart;
+package shoppingcart.visitor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,10 +17,11 @@ public class ShoppingCart {
     }
 
     double getTotal(){
-        double total=0;
-        for (Item item : this.items){
-            total = total + item.getPrice();
+        ShoppingCartVisitor visitor = new ShoppingCartVisitorImpl();
+        double sum=0;
+        for(Item item : items){
+            sum = sum + item.accept(visitor);
         }
-        return total;
+        return sum;
     }
 }

@@ -1,4 +1,4 @@
-package other.shoppingcart;
+package shoppingcart.simple;
 
 public class ShoppingCartDemo {
     public static void main(String[] args) {

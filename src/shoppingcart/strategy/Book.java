@@ -1,4 +1,4 @@
-package other.shoppingcartpayment;
+package shoppingcart.strategy;
 
 public class Book implements Item {
 

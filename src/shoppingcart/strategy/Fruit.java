@@ -1,4 +1,4 @@
-package other.shoppingcartpayment;
+package shoppingcart.strategy;
 
 public class Fruit implements Item {
     private double pricePerKg;

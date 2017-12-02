@@ -1,4 +1,4 @@
-package other.shoppingcartpayment;
+package shoppingcart.strategy;
 
 public interface PaymentMethod {
 

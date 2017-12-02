@@ -1,4 +1,4 @@
-package other.shoppingcartpayment;
+package shoppingcart.simple;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,9 +22,5 @@ public class ShoppingCart {
             total = total + item.getPrice();
         }
         return total;
-    }
-
-    boolean pay(PaymentMethod method){
-        return method.pay(getTotal());
     }
 }

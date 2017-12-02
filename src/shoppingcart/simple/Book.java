@@ -1,4 +1,4 @@
-package other.shoppingcart;
+package shoppingcart.simple;
 
 public class Book implements Item {
 

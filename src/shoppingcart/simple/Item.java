@@ -1,4 +1,4 @@
-package other.shoppingcartpayment;
+package shoppingcart.simple;
 
 public interface Item {
     double getPrice();

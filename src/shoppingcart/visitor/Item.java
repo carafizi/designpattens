@@ -1,4 +1,4 @@
-package other.shoppingcartvisitor;
+package shoppingcart.visitor;
 
 public interface Item {
     double accept(ShoppingCartVisitor visitor);

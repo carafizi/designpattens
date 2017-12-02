@@ -1,4 +1,4 @@
-package other.shoppingcartvisitor;
+package shoppingcart.strategy;
 
 public class ShoppingCartDemo {
     public static void main(String[] args) {
@@ -13,5 +13,9 @@ public class ShoppingCartDemo {
         shoppingCart.removeItem(book);
 
         System.out.println(shoppingCart.getTotal());
+        PaymentMethod visa = new Visa("myvisa", "12345", "");
+        PaymentMethod masterCard = new MasterCard("mymastercard", "56789", "");
+        System.out.println(shoppingCart.pay(visa));
+        System.out.println(shoppingCart.pay(masterCard));
     }
 }
